@@ -72,8 +72,8 @@ resnet_fashion.fc = nn.Linear(num_features_resnet, 10)  # 10 classes in FashionM
 # Define optimizers
 optimizers_fashion = {
     'Adam': optim.Adam(resnet_fashion.parameters(), lr=0.001),
-    'Adagrad': optim.Adagrad(resnet_fashion.parameters(), lr=0.001),
-    'RMSprop': optim.RMSprop(resnet_fashion.parameters(), lr=0.001)
+    'Adagrad': optim.Adagrad(resnet_fashion.parameters(), lr=0.002),
+    'RMSprop': optim.RMSprop(resnet_fashion.parameters(), lr=0.002)
 }
 
 # Define loss function
