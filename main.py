@@ -55,8 +55,8 @@ subset_train = Subset(train_dataset_fashion_mnist, range(10000))
 subset_test = Subset(test_dataset_fashion_mnist, range(5000))
 
 # Define data loaders
-train_loader_fashion_mnist = DataLoader(subset_train, batch_size=200, shuffle=True)
-test_loader_fashion_mnist = DataLoader(subset_test, batch_size=200, shuffle=False)
+train_loader_fashion_mnist = DataLoader(subset_train, batch_size=400, shuffle=True)
+test_loader_fashion_mnist = DataLoader(subset_test, batch_size=400, shuffle=False)
 
 # Load pre-trained ResNet50 model
 resnet_fashion = models.resnet50(pretrained=True)
